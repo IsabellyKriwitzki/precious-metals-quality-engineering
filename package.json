@@ -1,0 +1,21 @@
+{
+  "name": "precious-metals-quality-engineering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent QA/Quality Engineering demonstration for a digital precious-metals investment platform.",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:ui": "playwright test tests/ui",
+    "test:e2e": "playwright test tests/e2e",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
